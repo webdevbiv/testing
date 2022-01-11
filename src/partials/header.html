@@ -1,0 +1,42 @@
+<section class="header header--my-library" id="header">
+    <div class="container">
+        <div class="ln-wrapper ln-wrapper--my-library">
+            <a href="" class="logo">
+                <svg class="logo__svg">
+                    <use href="./images/header/icons/sprite2.svg#Capa_1"></use>
+                </svg>
+                <span class="logo__title">Filmoteka</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="" class="nav__link nav__link--selected">home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">my library</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <form class="form hidden none">
+            <input class="form__input hidden none" type="text" placeholder="Поиск фильмов" autocomplete="off">
+            <button class="form__submit" type="submit">
+                <svg class="form__svg">
+                    <use use href="./images/header/icons/search2.svg#search"></use>
+                </svg>
+            </button>
+        </form>
+
+        <div class="placeholder">
+            <p class="error hidden">Search result not successful. Enter the correct movie name.</p>
+            <ul class="nav-my-library">
+                <li class="nav-my-library__item">
+                    <button class="nav-my-library__watched btn" type="button">watched</button>
+                </li>
+                <li class="nav-my-library__item">
+                    <button class="nav-my-library__queue btn" type="button">queue</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
