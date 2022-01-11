@@ -22,6 +22,7 @@ function homePage(e) {
     headerHome.classList.add('nav__link--selected')
     headerMyLibrary.classList.remove('nav__link--selected')
     headerQueuedBtn.classList.remove('btn--selected')
+    headerError.classList.add('hidden')
 }
 
 function myLibrary(e) {
@@ -35,6 +36,7 @@ function myLibrary(e) {
     headerMyLibrary.classList.add('nav__link--selected')
     headerWatchedBtn.classList.add('btn--selected')
     headerQueuedBtn.classList.remove('btn--selected')
+    headerError.classList.add('hidden')
 }
 
 function watchedBtn(e) {

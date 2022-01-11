@@ -15,7 +15,7 @@
     text-transform: uppercase;
 
     @include for-phone {
-        width: 130px;
+        max-width: 130px;
     }
 
     &:hover {
