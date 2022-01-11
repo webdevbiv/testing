@@ -65,17 +65,15 @@
 
     transition: all $speed $cubic-bezier;
 
-    &:hover *,
-    &:focus * {
+    &:hover * {
         color: $fc-accent;
         transition: all $speed $cubic-bezier;
     }
 
-    &:hover .logo__svg,
-    &:focus .logo__svg {
+    &:hover .logo__svg {
         filter: drop-shadow($svg-shadow);
         fill: $svg-secondary;
-        transition: all $speed $cubic-bezier;
+        transition: all 100ms $cubic-bezier;
     }
 
     &__svg {
@@ -83,7 +81,7 @@
         height: 24px;
         fill: $logo-cl;
         margin-right: 10px;
-        transition: all $speed $cubic-bezier;
+        transition: all 100ms $cubic-bezier;
     }
 
     &__title {
@@ -164,8 +162,7 @@
             letter-spacing: normal;
         }
 
-        &:hover,
-        &:focus {
+        &:hover {
             color: $fc-accent;
             transition: all $speed $cubic-bezier;
 
@@ -240,7 +237,7 @@
 
         &::placeholder {
             opacity: 1;
-            transition: all $speed $cubic-bezier;
+
 
         }
 
@@ -248,22 +245,14 @@
             /* Chrome/Opera/Safari */
             opacity: 1;
             color: $fc-secondary;
-            transition: all $speed $cubic-bezier;
-
 
             &:hover,
-            &:focus {
-                stroke: $fc-accent;
-                color: $fc-accent;
+            &:focus, 
+            &:active {
                 fill: $fc-accent;
                 transition: all $speed $cubic-bezier;
             }
         }
-
-        // &:hover::-webkit-input-placeholder,
-        // &:focus::-webkit-input-placeholder {
-        //     color: $fc-accent;
-        // }
     }
 
     &__submit {
@@ -275,7 +264,6 @@
         align-items: center;
         height: 100%;
         transition: all $speed $cubic-bezier;
-
         padding-right: 6px;
 
         @include for-phone {
@@ -293,11 +281,10 @@
             transition: none;
         }
 
-        &:hover *,
-        &:focus * {
+        &:hover * {
             fill: $fc-accent;
             cursor: pointer;
-            transition: all $speed $cubic-bezier;
+            transition: all 250ms $cubic-bezier;
         }
 
     }
@@ -312,10 +299,9 @@
 
         &:hover,
         &:focus {
-            stroke: $fc-accent;
             fill: $fc-accent;
             cursor: pointer;
-            transition: all $speed $cubic-bezier;
+            transition: all 250ms $cubic-bezier;
 
         }
     }

@@ -18,8 +18,14 @@
         width: 130px;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
+        outline-color: $btn-accent;
+        background-color: $btn-accent;
+        box-shadow: $btn-shadow;
+        transition: all $speed $cubic-bezier;
+    }
+
+    &--selected {
         outline-color: $btn-accent;
         background-color: $btn-accent;
         box-shadow: $btn-shadow;
